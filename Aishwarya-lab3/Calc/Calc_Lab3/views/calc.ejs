@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <header><h2>Calculator<h2/></header>
+  <body>
+  <section>
+  
+
+<form method="post" action="/calc">
+  
+    <label  for="num1">Number 1:</label>
+    <input type="number" class="form-control" name="num1" id="num1" placeholder="First Number" >
+  <br/><br/>
+    <label  for="num2">Number 2:</label>
+    <input type="number" class="form-control" id="num2" name="num2" placeholder="Second Number" >
+  <br/><br/>
+  
+  <button type="submit" name="oper" value="add" class="btn btn-default">
+  Add</button>
+  
+  <button type="submit" name="oper" value ="sub" class="btn btn-default">
+ Sub</button>
+  
+  <button type="submit" name="oper"  value = "mul" class="btn btn-default">
+ Mul</button>
+    
+  <button type="submit" name="oper" value = "div" class="btn btn-default">
+ Div</button>
+</form>
+<br/><br/>
+ Result:
+  <%= result %>
+ 
+</section>
+  </body>
+</html>
